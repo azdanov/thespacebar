@@ -1,1 +1,1 @@
-web: $(composer config bin-dir)/heroku-php-nginx web/
+web: $(composer config bin-dir)/heroku-php-nginx public/
