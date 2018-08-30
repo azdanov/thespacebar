@@ -16,15 +16,15 @@ use function ucwords;
 class ArticleController extends AbstractController
 {
     /**
-     * @Route(path="/", methods={"GET"})
+     * @Route(path="/", name="app_homepage")
      */
     public function homepage() : Response
     {
-        return new Response("I'm on homepage!");
+        return $this->render('article/homepage.html.twig');
     }
 
     /**
-     * @Route("/news/{slug}")
+     * @Route("/news/{slug}", name="article_show")
      *
      * @param string $slug A slug for a news article
      */
