@@ -17,7 +17,9 @@
                                                                               src="{{ asset('images/alien-profile.png') }}"
                                     > Mike Ferengi </span>
                                 <span class="pl-2 article-details"> 3 hours ago</span>
-                                <span class="pl-2 article-details"> 5 <a href="#" class="fa fa-heart-o like-article"
+                                <span class="pl-2 article-details"> <span class="js-like-article-count">5</span> <a
+                                        href="{{ path('article_toggle_heart', {slug: slug}) }}"
+                                        class="fa fa-heart-o js-like-article like-article"
                                     ></a> </span>
                             </div>
                         </div>
@@ -111,4 +113,10 @@
             </div>
         </div>
     </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+
+    <script src="{{ asset('js/article_show.js') }}"></script>
 {% endblock %}
