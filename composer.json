@@ -14,7 +14,7 @@
     "symfony/twig-bundle": "*",
     "symfony/web-server-bundle": "*",
     "symfony/monolog-bundle": "^3.0",
-    "sensiolabs/security-checker": "^4.1",
+    "sensiolabs/security-checker": "^5.0.0",
     "symfony/yaml": "*"
   },
   "require-dev": {
